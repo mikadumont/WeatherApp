@@ -1,0 +1,54 @@
+{
+  "Locations": [
+    {
+      "Name": "Woods Coffee",
+      "Address": "700 Bellevue Way NE #140, Bellevue, WA 98004",
+      "Sun": "100%",
+      "Time": "5am - 7am",
+      "StartTime": "6",
+      "EndTime": "18",
+      "Lat": "47.615929",
+      "Long": "-122.186974"
+    },
+    {
+      "Name": "Analog Coffee",
+      "Address": "address",
+      "Sun": "100%",
+      "Time": "7am - 9am",
+      "StartTime": "6",
+      "EndTime": "18",
+      "Lat": "47.6206649",
+      "Long": "-122.3277006"
+    },
+    {
+      "Name": "Fika House Cafe",
+      "Address": "298 106th Ave NE, Bellevue, WA 98004",
+      "Sun": "100%",
+      "Time": "6am - 8am",
+      "StartTime": "6",
+      "EndTime": "18",
+      "Lat": "47.6165857",
+      "Long": "-122.2073868"
+    },
+    {
+      "Name": "name",
+      "Address": "address",
+      "Sun": "70%",
+      "Time": "6am - 8am",
+      "StartTime": "6",
+      "EndTime": "18",
+      "Lat": "47.6206649",
+      "Long": "-122.3277006"
+    },
+    {
+      "Name": "name",
+      "Address": "address",
+      "Sun": "80%",
+      "Time": "6am - 8am",
+      "StartTime": "6",
+      "EndTime": "18",
+      "Lat": "47.6206649",
+      "Long": "-122.3277006"
+    }
+  ]
+}

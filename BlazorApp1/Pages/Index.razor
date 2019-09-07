@@ -1,0 +1,54 @@
+﻿@page "/"
+
+@using BlazorApp1.Data
+@inject WeatherForecastService ForecastService
+
+<h1>Weather forecast</h1>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div style="width:40%; display:inline-block">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Time</th>
+                    <th>Sun</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var forecast in forecasts)
+                {
+                    <tr onclick="GetMap(@forecast.Lat, @forecast.Long)">
+                        <td>@forecast.Name</td>
+                        <td>@forecast.Address</td>
+                        <td>@forecast.Time</td>
+                        <td>@forecast.Sun</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div style="width:50%; float:right">
+        <div id="mapArea">
+            <div id="map" style="width:100%; height:500px;"></div>
+        </div>
+    </div>
+
+}
+
+@code {
+    List<WeatherForecast> forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = ForecastService.GetSunnyLocation();
+    }
+}
+
+
